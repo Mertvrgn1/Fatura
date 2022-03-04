@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cbad26b50163461ea5a3d6963a964968" Name="Diagram1">
+        <EntityTypeShape EntityType="FatDbModel.Birim" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FatDbModel.FatDetay" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FatDbModel.FatMaster" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FatDbModel.Ilce" Width="1.5" PointX="1.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="FatDbModel.Musteri" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FatDbModel.Sehir" Width="1.5" PointX="1.5" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FatDbModel.Urun" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="FatDbModel.FK_Urun_Birim" ManuallyRouted="false" />
+        <AssociationConnector Association="FatDbModel.FK_FatDetay_FatMaster" ManuallyRouted="false" />
+        <AssociationConnector Association="FatDbModel.FK_FatDetay_Urun" ManuallyRouted="false" />
+        <AssociationConnector Association="FatDbModel.FK_FatMaster_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="FatDbModel.FK_Ilce_Sehir" ManuallyRouted="false" />
+        <AssociationConnector Association="FatDbModel.FK_Musteri_Ilce" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
